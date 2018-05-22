@@ -97,3 +97,9 @@ LINK_CHECKER_ARGS:mc.net.java.dev.jna.platform,--whitelistTo java/awt/Window
 
 LINK_CHECKER_ARGS:mc.org.checkerframework.checker.compat.qual,--whitelistFrom afu/org/checkerframework/checker/formatter
 LINK_CHECKER_ARGS:mc.org.checkerframework.checker.compat.qual,--whitelistFrom org/checkerframework/checker/formatter
+
+# Jetty
+
+MODULE:org.eclipse.jetty.websocket:websocket-client:9.4.5.v20170502
+# wtf?
+LINK_CHECKER_ARGS:mc.org.eclipse.jetty.jetty.util,--whitelistTo javax/servlet
